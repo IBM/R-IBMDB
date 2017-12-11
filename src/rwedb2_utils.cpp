@@ -2,6 +2,8 @@
 /*
  Licensed Materials - Property of IBM
  
+ License: BSD 3-Clause
+
  5747-C31, 5747-C32
 
  © Copyright IBM Corp. 2017    All Rights Reserved
