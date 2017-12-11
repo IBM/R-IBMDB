@@ -1,0 +1,130 @@
+{
+   sqloprocname	
+   Memcheck:Cond
+   ...
+   fun:sqloprocname
+   ...
+}
+
+{
+   sqloprocname_Value8
+   Memcheck:Value8
+   ...
+   fun:sqloprocname
+   ...
+}
+
+{
+   sqloprocname_Value4
+   Memcheck:Value4
+   ...
+   fun:sqloprocname
+   ...
+}
+
+{
+   sqloprocname_Leak
+   Memcheck:Leak
+   ...
+   fun:sqloprocname
+   ...
+}
+
+{
+   <libR_readline_leak>
+   Memcheck:Leak
+   ...
+   fun:rl_message
+   ...
+   obj:/usr/lib64/R/lib/libR.so
+}
+
+{
+   <libR_readline_leak>
+   Memcheck:Leak
+   ...
+   fun:readline_internal_char
+   ...
+   obj:/usr/lib64/R/lib/libR.so
+}
+
+{
+   <libgsk_ICC_Init_Leak>
+   Memcheck:Leak
+   ...
+   fun:ICC_Init
+   ...
+}
+
+{
+   <sqlOGetConfigPath_Leak>
+   Memcheck:Leak
+   ...
+   fun:sqloGetConfigPath
+   ...
+}
+
+{
+   <SQLDriverConnect_Leak>
+   Memcheck:Leak
+   ...
+   fun:SQLDriverConnect
+   ...
+}
+
+{
+   <SQLDriverConnect_Leak>
+   Memcheck:Leak
+   ...
+   fun:SQLDriverConnectW
+   ...
+}
+
+{
+   <SQLDriverConnect_Cond>
+   Memcheck:Cond
+   ...
+   fun:SQLDriverConnect
+   ...
+}
+
+{
+   <SQLDriverConnect_Cond>
+   Memcheck:Cond
+   ...
+   fun:SQLDriverConnectW
+   ...
+}
+
+{
+   <SQLGetDiagRec_possible>
+   Memcheck:Leak
+   match-leak-kinds:possible
+   ...
+   fun:*SQLGetDiagRec*
+   ...
+}
+
+{
+   <SQLGetDiagRec_cond>
+   Memcheck:Cond
+   ...
+   fun:*SQLGetDiagRec*
+   ...
+}
+
+{
+   <libdb2_init_env_cond>
+   Memcheck:Cond
+   ...
+   fun:*sqloInitEnvironment*
+   ...
+}
+
+{
+   <libdb2_sqloMessage_cond>
+   Memcheck:Cond
+   ...
+   fun:*sqloMessage*
+   ...
+}

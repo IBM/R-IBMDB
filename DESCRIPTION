@@ -1,0 +1,17 @@
+Package: RDB2
+Type: Package
+Title: R interface to DB2 based on ODBC
+Version: 1.1.0
+Date: 2017-03-17
+Author: Karthik Jayaraman
+Maintainer: Karthik Jayaraman <karthik.jayaraman1@ibm.com>
+Description: This is a limited ODBC based interface between R and DB2. 
+	     It offers much more efficient reads and writes from R dataframes to DB2 tables
+	     than generic packages such as RJDBC and RODBC, especially for large datasets.
+License: file LICENCE
+Imports: Rcpp (>= 0.12.7)
+Suggests:
+	testthat
+LinkingTo: Rcpp
+SystemRequirements: C++11
+NeedsCompilation: yes

@@ -1,0 +1,3 @@
+PKG_CXXFLAGS=-I/usr/include/
+PKG_LIBS=-L/usr/lib64/ -lodbc
+CXX_STD = CXX11
