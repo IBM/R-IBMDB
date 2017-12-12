@@ -1,12 +1,10 @@
-# RDB2
-RDB2 is a limited ODBC based interface between R and DB2. 
+# R-IBMDB
+R-IBMDB is a limited ODBC based interface between R and DB2. 
 It offers much more efficient reads and writes from R dataframes to DB2 tables than generic packages such as RJDBC and RODBC, especially for large datasets
 
 ## Installation ##
 
-Package installation steps are in install_notebook_library.sh in the RWE-Notebooks repo
-
-The RDB2.zip file is created in Jenkins job
+Package installation steps are in the install.sh script
 
 ```
 WHC-RWE-Dev/RWE_Notebooks_libraries_Nightly
@@ -15,20 +13,19 @@ WHC-RWE-Dev/RWE_Notebooks_libraries_Nightly
 
 ### Usage Instructions
 
-For R:-
 ```
-library("RDB2")
+library("R-IBMDB")
 ```
 
 ### Development Instructions
 
-For development, the RDB2 library comes with a test suite that uses the testthat R package.
+For development, the R-IBMDB library comes with a test suite that uses the testthat R package.
 
 To use it, ensure that a database called PUBWRKSP exists on the test server.
 
 Read the comments in ```rdb2_test_setup.sh``` from the RDB2 tests folder and run it.
 
-Run the following code after installing RDB2 and dataConn
+Run the following code after installing R-IBMDB and dataConn
 ```
 chmod -R 777 /tmp/RDB2
 su db2inst1
